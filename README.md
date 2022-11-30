@@ -3,3 +3,5 @@ Hello, today I'm releasing a free resource called *DOTI-xmasLoading*. It is chri
 > Features
  - Snowing effect
 - Song play (SPACE to start/stop)
+
+Special thanks to @Rencikas for helping.
