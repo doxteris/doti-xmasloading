@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <title>DOTI//XmasLoading</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+
+<body>
+<div style="main"><img src="assets/photo.png"></div>
+
+<div class="loading-assets">
+    <div class="loadingbar">
+      <div class="loadingbar-loaded"></div>
+    </div>
+  </div>
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+  </div>
+
+<main>
+
+</main>
+
+
+<audio id="audio_loading" src="music/song.mp3" autoplay hidden="true" loop="true">
+<script>
+
+var play = true;
+var myAudio = document.getElementById("audio_loading");
+
+myAudio.volume = 0.5;
+
+function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32: //SpaceBar                    
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+  return false;
+}
+
+window.addEventListener("keydown", onKeyDown, false);
+</script>
+
+<script src="config.js"></script>
+<script src="assets/main.js"></script>
+
+
+</body>
+</html>
