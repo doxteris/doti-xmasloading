@@ -1,89 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
-        <title>DOTI//XmasLoading</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
 <body>
-<div style="main"><img src="images/photo.png"></div>
-
-<div class="loading-assets">
-    <div class="loadingbar">
-      <div class="loadingbar-loaded"></div>
+  <div class="container">
+    <img src="images/photo.png">    
+      <div class="loadingbar">
+      <div class="loadingbar-loaded"></div> 
+  
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
     </div>
   </div>
-
-<div class="snowflakes" aria-hidden="true">
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-    <div class="snowflake">
-    ❅
-    </div>
-    <div class="snowflake">
-    ❆
-    </div>
-    <div class="snowflake">
-    ❄
-    </div>
-  </div>
-
-<main>
-
-</main>
-
-
-<audio id="audio_loading" src="music/song.mp3" autoplay hidden="true" loop="true">
-<script>
-
-var play = true;
-var myAudio = document.getElementById("audio_loading");
-
-myAudio.volume = 0.5;
-
-function onKeyDown(event) {
-        switch (event.keyCode) {
-            case 32: //SpaceBar                    
-                if (play) {
-                    myAudio.pause();
-                    play = false;
-                } else {
-                    myAudio.play();
-                    play = true;
-                }
-                break;
-        }
-  return false;
-}
-
-window.addEventListener("keydown", onKeyDown, false);
-</script>
+</body>
 
 <script src="config.js"></script>
 <script src="js/main.js"></script>
+<audio id="audio_loading" src="music/song.mp3" autoplay hidden="true" loop="true"></audio>
 
-
-</body>
 </html>
+
+<script>
+  let play = true;
+  let myAudio = document.getElementById("audio_loading");
+
+  myAudio.volume = 0.5;
+
+  function onKeyDown(event) {
+          switch (event.keyCode) {
+              case 32: //SpaceBar                    
+                  if (play) {
+                      myAudio.pause();
+                      play = false;
+                  } else {
+                      myAudio.play();
+                      play = true;
+                  }
+                  break;
+          }
+    return false;
+  }
+
+  window.addEventListener("keydown", onKeyDown, false);
+</script>
